@@ -7,18 +7,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TextView: View {
+    let text: String
+    let color: Color
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+                Image (systemName: "balloon")
+            .foregroundStyle(color)
+                Text(text)
+                    .foregroundStyle(color)
+                    .padding()
+                    .background(.black .opacity(0.8))
+                    .font(.largeTitle)
+                    
+      
         }
-        .padding()
     }
-}
+
 
 #Preview {
-    ContentView()
+    VStack{
+        TextView (text: "Hello", color: .blue)
+        TextView (text: "My", color: .green)
+        TextView (text: "World", color: .red)
+        TextView (text: "hmmmmm", color: .white)
+    }
 }
