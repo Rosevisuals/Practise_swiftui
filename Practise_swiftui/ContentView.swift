@@ -6,31 +6,23 @@
 //
 
 import SwiftUI
-
-struct TextView: View {
-    let text: String
-    let color: Color
-    
+struct Episode {
+    let title: String
+    let showTitle: String
+}
+struct ContentView: View {
+    var episode: Episode = Episode(title: "Hello from the other side", showTitle: "At least i couldn't understand")
+    @State private var isPlaying: Bool = false
     var body: some View {
-        
-                Image (systemName: "balloon")
-            .foregroundStyle(color)
-                Text(text)
-                    .foregroundStyle(color)
-                    .padding()
-                    .background(.black .opacity(0.8))
-                    .font(.largeTitle)
-                    
-      
+        Button (action: {
+            self.isPlaying.toggle()
+            
+        }){
+            Image(systemName: isPlaying ? "pause.circle" : "play.circle")
         }
     }
-
+}
 
 #Preview {
-    VStack{
-        TextView (text: "Hello", color: .blue)
-        TextView (text: "My", color: .green)
-        TextView (text: "World", color: .red)
-        TextView (text: "hmmmmm", color: .white)
-    }
+    ContentView()
 }

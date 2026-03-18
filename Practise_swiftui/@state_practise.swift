@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct _state_practise: View {
+    
+    @State private var quantity = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Order quantity: \(quantity) ")
+           
+            HStack {
+                Button("Increase"){
+                    quantity += 1
+                }
+                Button("Decrease"){
+                    quantity -= 1
+                }
+            }
+               
+        }
     }
 }
 
