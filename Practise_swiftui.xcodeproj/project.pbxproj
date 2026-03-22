@@ -11,11 +11,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D69626FF2F6E287D00E28ECD /* ViewModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		D6AFD3FF2F4893600075F9D4 /* Practise_swiftui */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Practise_swiftui;
@@ -39,7 +34,6 @@
 			children = (
 				D6AFD3FF2F4893600075F9D4 /* Practise_swiftui */,
 				D6AFD3FE2F4893600075F9D4 /* Products */,
-				D69626FF2F6E287D00E28ECD /* ViewModel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +61,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D69626FF2F6E287D00E28ECD /* ViewModel */,
 				D6AFD3FF2F4893600075F9D4 /* Practise_swiftui */,
 			);
 			name = Practise_swiftui;
